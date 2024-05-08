@@ -9,18 +9,18 @@ import { ProfileModule } from './profile/profile.module';
 @Module({
   controllers: [AppController],
   imports: [
-    UserModule,
-    TypeOrmModule.forRoot({
-      type: 'mysql',
-      host: '127.0.0.1',
-      port: 3306,
-      username: 'root',
-      password: null,
-      database: 'nestjs',
-      entities: [User],
-      synchronize: true,
-    }),
-    AuthModule,
+    // UserModule,
+    // TypeOrmModule.forRoot({
+    //   type: 'mysql',
+    //   host: '127.0.0.1',
+    //   port: 3306,
+    //   username: 'root',
+    //   password: null,
+    //   database: 'nestjs',
+    //   entities: [User],
+    //   synchronize: true,
+    // }),
+    // AuthModule,
     ProfileModule,
   ],
 })

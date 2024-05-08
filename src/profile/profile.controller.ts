@@ -3,7 +3,7 @@ import { AuthGuard } from '@nestjs/passport';
 
 @Controller('profile')
 export class ProfileController {
-  @UseGuards(AuthGuard('jwt'))
+  // @UseGuards(AuthGuard('jwt'))
   @Get()
   profile() {
     return { message: 'I am protected route' };
